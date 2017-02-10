@@ -8,7 +8,7 @@
  * }
  */
 
-Time 
+Time Complexity - O(n)
 
 public class Solution {
     public List<String> binaryTreePaths(TreeNode root) {
@@ -30,6 +30,5 @@ public class Solution {
             printPath(root.left,s,output+String.valueOf(root.val)+"->");
         if(root.right != null)    
             printPath(root.right,s,output+String.valueOf(root.val)+"->");
-        return;
     }
 }
